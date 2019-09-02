@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Find your agent - Bestag</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <meta name="description" content="">
+        <link rel="icon" href="http://vu9kuxsiq.preview.infomaniak.website/themes/bestag/assets/images/favicon.ico">
+
+        <meta property="og:url" content="http://vu9kuxsiq.preview.infomaniak.website/a-propos/contact">
+        <meta property="og:title" content="Contact">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="">
+        
+        <link rel="alternate" hreflang="de" href="http://vu9kuxsiq.preview.infomaniak.website/de/a-propos/contact" />
+        <link rel="alternate" hreflang="fr" href="http://vu9kuxsiq.preview.infomaniak.website/fr/a-propos/contact" />
+        <link rel="alternate" hreflang="en" href="http://vu9kuxsiq.preview.infomaniak.website/en/a-propos/contact" />
+
+        <link href="localstyles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        #footer {padding-top: 20px;}
+        @media (min-width: 991.99px) {
+            body.layout-about-contact {padding-top:240px;}
+            #mobile-menu .courtier-locale {display: none;}
+        }
+        @media (max-width: 991.98px) {
+            #mobile-menu {bottom: unset; background-color: unset; top:0px; left: unset;}
+            #mobile-menu .courtier-locale {display: flex; padding: 5px 0;}
+            #header #main-menu .logo {margin-top: 40px;}
+            #header #main-menu {height: 110px;}
+        }
+
+    </style>
+
+    <body class="layout-about layout-about-contact page-contact">
+        <header id="header" class="fixed-top">
+            <nav id="top-menu" class="d-none d-lg-block">
+
+                <button data-request="onSwitchLocale" data-request-data="locale: 'de'"
+                        class="btn btn-link ">DE
+                </button>
+
+                <button data-request="onSwitchLocale" data-request-data="locale: 'fr'"
+                        class="btn btn-link">FR
+                </button>
+
+                <button data-request="onSwitchLocale" data-request-data="locale: 'en'"
+                        class="btn btn-link active">EN
+                </button>
+            </nav>
+            <div id="mobile-menu">
+                <div class="courtier-locale">
+
+                    <button data-request="onSwitchLocale" data-request-data="locale: 'de'"
+                            class="btn btn-link ">DE
+                    </button>
+
+                    <button data-request="onSwitchLocale" data-request-data="locale: 'fr'"
+                            class="btn btn-link">FR
+                    </button>
+
+                    <button data-request="onSwitchLocale" data-request-data="locale: 'en'"
+                            class="btn btn-link active">EN
+                    </button>
+                </div>
+            </div>
+
+            <div id="main-menu" class="bg-white">
+                <div class="container h-100">
+                    <div class="d-flex h-100 flex-row align-items-center">
+                        <a href="/" class="logo mr-auto" accesskey="0">
+                            <img src="http://vu9kuxsiq.preview.infomaniak.website/themes/bestag/assets/images/logo.svg" alt="" title="Bestag">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="block-head">
+            <div class="container block-head">
+                <div class="row">
+                    <div class="col-lg-12" style="padding-bottom:50px;">
+                        <h1><strong>Find your agent.</strong></h1>
+
+                        <p>One of a&nbsp;kind in Switzerland, identify the best real estate agents yourself for a&nbsp;successful sale. On top of&nbsp;this, get free advice to save time and money with the Bestag formula.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block-contact">
+            <div class="container">
+                <form method="post" data-request="onSubmit" data-request-flash>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="col-left">
+                            <h4>Where is the property located?</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-right">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="zipcode" class="required">Zip </label>
+                                        <input name="zipcode" id="zipcode" type="text" class="form-control" placeholder="8050">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="price" class="required">Price </label>
+                                        <input name="price" id="price" type="text" class="form-control" placeholder="1500000">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="address">Address (optional) </label>
+                                        <input name="address" id="address" type="address" class="form-control" placeholder="Le Châble, Chemin des Dzardis">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="col-left">
+                            <h4>Who should the preliminary best agents report be sent to?</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-right">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="firstname" class="required">First name </label>
+                                        <input name="firstname" id="firstname" type="text" class="form-control" placeholder="Anna">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="lastname" class="required">Last name </label>
+                                        <input name="lastname" id="lastname" type="text" class="form-control" placeholder="Steiner">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="email" class="required">E-mail </label>
+                                        <input name="email" id="email" type="email" class="form-control" placeholder="anna@bluewin.ch">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone number </label>
+                                        <input name="phone" id="phone" type="tel" class="form-control" placeholder="079 000 00 00">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 d-none">
+                                    <div class="form-group">
+                                        <label for="username">
+                                            Anti-SPAM protection please keep this field empty
+                                        </label>
+                                        <input name="username" id="username" type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    * denotes a mandatory field
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <button class="btn btn-primary btn-block">Find Top Agents</button>
+                                </div>
+                                <div class="col-lg-12" style="font-size: smaller; padding-top: 15px;">
+                                    If you don't receive an email within 5 minutes, please check your spam folder.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container small">
+                <div class="row row-2">
+                    <div class="col-lg-6">
+                        <p>&copy;2019 Bestag Vermittlung AG</p>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <p class="text-lg-right">Made in Switzerland</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="http://vu9kuxsiq.preview.infomaniak.website/combine/765c48f6733284be57378df925a335fb-1564997660.js"></script>
+
+    </body>
+</html>

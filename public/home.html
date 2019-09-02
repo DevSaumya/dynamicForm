@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bestag Embedded Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .bg-light {
+            background: #EDEDEE !important;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <form id="formData">
+        <section class="border rounded border-dark p-3">
+            <h5 id="cus_0" > FIND THE BEST AGENT TO SELL YOUR PROPERTY</h5>
+            <!-- FIND THE BEST AGENT TO SELL YOUR PROPERTY -->
+            <div class="p-3 border border-medium rounded">
+                    <div class="row">
+                        <!-- PROPERTY DETAILS START -->
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <article class="h-100 bg-light border border-medium p-3">
+                                <h6 id="cus_1"><strong>PROPERTY DETAILS</strong></h6>
+                                <div class="form-group row">
+                                    <label for="inputZipCode" class="col-sm-6 col-form-label h6 text-md-right" id="cus_2">ZIP
+                                        CODE:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputZipCode"
+                                            placeholder="Zip Code">
+                                        <div class="invalid-feedback">
+                                            Enter Valid ZipCode
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPrice" class="col-sm-6 col-form-label h6 text-md-right" id="cus_3">PRICE
+                                        <small>(in millions)</small>:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputPrice" placeholder="price">
+                                        <div class="invalid-feedback">
+                                            Enter Price In Valid Format
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-0">
+                                    <label for="inputAddress"
+                                        class="col-sm-6 col-form-label h6 text-md-right" id="cus_4">ADDRESS:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- PROPERTY DETAILS END -->
+
+                        <!-- PROPERTY DETAILS START -->
+                        <div class="col-md-6">
+                            <article class="h-100 bg-light border border-medium p-3">
+                                <h6 id="cus_5"><strong>CONTACT DETAILS</strong></h6>
+                                <div class="form-group row">
+                                    <label for="inputName"
+                                        class="col-sm-6 col-form-label h6 text-md-right" id="cus_6">NAME:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                        <div class="invalid-feedback">
+                                            Enter Name
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputEmail" class="col-sm-6 col-form-label h6 text-md-right" id="cus_7">EMAIL
+                                        ADDRESS:</label>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control" id="inputEmail"
+                                            placeholder="Email Address">
+                                        <div class="invalid-feedback">
+                                            Enter Valid Email Address
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-0">
+                                    <label for="inputPhone" class="col-sm-6 col-form-label h6 text-md-right" id="cus_8">PHONE
+                                        NUMBER:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputPhone"
+                                            placeholder="Phone Number">
+                                        <div class="invalid-feedback">
+                                            Enter a valid Phone Number
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- PROPERTY DETAILS END -->
+                    </div>
+
+                    <!-- powered by start -->
+                    <article class="d-flex justify-content-between align-items-center pt-3">
+                        <div class="d-flex align-items-center">
+                            <span id="cus_9" >powered by </span>
+                            <img src="" alt="logo" class="ml-3">
+                        </div>
+
+                        <div class="dropdown" id="countrySlct">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language Select
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                                <a class="dropdown-item" value="EN">ENGLISH</a>
+                                <a class="dropdown-item" value="FR">FRENCH</a>
+                                <a class="dropdown-item" value="DE">GERMAN</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <button type="submit" id=submit class="btn btn-secondary btn-sm text-uppercase">
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span id="cus_10">
+                            Get Top 10
+                        </button>
+                    </article>
+                    <!-- powered by end -->
+                </form>
+                <div class="alert alert-success" style="display: none" role="alert" id="successMsg" >
+                    A simple success alert—check it out!
+                  </div>
+                  <div class="alert alert-danger" style="display: none" role="alert" id="failMsg">
+                    A simple danger alert—check it out!
+                  </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type='text/javascript'>
+    $(document).ready(function () {
+
+        let selectLang = '';
+        let _i = 0;
+        $('#formData input').on('click', function(){
+            $(this).removeClass('is-invalid');
+        })
+        $('#countrySlct .dropdown-item').on('click',function(){
+            selectLang = $(this).attr('value');
+            let i = 0;
+            $('#dropdownMenuButton').text($(this).text());
+            $.getJSON('./lang.json', function(jd){
+
+                var heading = jd[selectLang].heading;
+                var tag1 = jd[selectLang].tag1;
+                var zipcode = jd[selectLang].zipcode;
+                var price = jd[selectLang].price;               
+                var address = jd[selectLang].address;
+                var tag2 = jd[selectLang].tag2;
+                var name = jd[selectLang].name;
+                var email = jd[selectLang].email;
+                var phone_no = jd[selectLang].phone_no;
+                const powered = jd[selectLang].powred;
+                const top = jd[selectLang].top;
+
+                $('#cus_0').html(heading);
+                $('#cus_1').html(tag1);
+                $('#cus_2').html(zipcode);
+                $('#cus_3').html(price);
+                $('#cus_4').html(address);
+                $('#cus_5').html(tag2);
+                $('#cus_6').html(name);
+                $('#cus_7').html(email);
+                $('#cus_8').html(phone_no);
+                $('#cus_9').html(powered);
+                $('#cus_10').html(top);
+            });
+        })
+
+        $('#submit').click("#formData", function (e) {
+            e.preventDefault();
+            const name = $("#inputName").val();
+            const phone = $('#inputPhone').val();
+            const price = $('#inputPrice').val();
+            const zipcode = $('#inputZipCode').val();
+            const email = $("#inputEmail").val();
+            const address = $('#inputAddress').val();
+
+            const nameField = $("#inputName");
+            const phoneField = $('#inputPhone');
+            const priceField = $('#inputPrice');
+            const zipcodeField = $('#inputZipCode');
+            const emailField = $("#inputEmail");
+            const addressField = $('#inputAddress');
+            
+            const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g
+            const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            const zipRegex = /^[0-9]+$/;
+            const priceRegex = /^\d+(,\d{3})*(\.\d{1,2})?$/;
+            const phoneRegex = /^[0-9]{10}$/;
+
+            if (name.length === 0 || name == null) {
+                nameField.addClass('is-invalid');
+            }
+            else if (!nameRegex.test(name)) {
+                nameField.addClass('is-invalid').next().text('Not a valid Name');
+            }
+            else if (email.length === 0 || email == null) {
+                emailField.addClass('is-invalid');
+            }
+            else if (!emailRegex.test(email)) {
+                emailField.addClass('is-invalid');
+            }
+            else if (zipcode.length === 0 || zipcode == null) {
+                zipcodeField.addClass('is-invalid');
+            }
+            else if (!zipRegex.test(zipcode)) {
+                zipcodeField.addClass('is-invalid');
+            }
+            else if (price.length === 0 || price == null) {
+                priceField.addClass('is-invalid');
+            }
+            else if (!priceRegex.test(price)) {
+                priceField.addClass('is-invalid');
+            }
+            else if (!phoneRegex.test(phone)) {
+                phoneField.addClass('is-invalid')
+            }
+            else {
+                $(this).attr({'disabled':'disabled'}).find('.spinner-border').removeClass('d-none').addClass('d-inline-block');
+                _this = $(this);
+                $.ajax({
+                    type: 'POST',
+                    headers: {
+                        'apikey': 'mDmMnUhF9zi8aSVAHJT8bIdvZE4Tmyqropi4YWD4',
+                    },
+                    url: window.location.origin+'/auth/generateQuery',
+                    data: {
+                        lang: selectLang,
+                        zip: zipcode,
+                        price: price,
+                        address: address,
+                        name: name,
+                        email: email,
+                        phone: phone
+                    },
+                    success: function (result) {
+                        const msg = result.data.message;
+                        const data = result.data.data;
+
+                        console.log('response', result);
+                        _this.removeAttr('disabled').find('.spinner-border').addClass('d-none').removeClass('d-inline-block');
+                        $('#successMsg').text(msg +  data).fadeIn();
+                        hideMsg();
+                    },
+                    error: function (xhr, status, errorThrown) {
+                        _this.removeAttr('disabled').find('.spinner-border').addClass('d-none').removeClass('d-inline-block');
+                        $('#failMsg').fadeIn();
+                        hideMsg();
+                        xhr.status;
+                        console.log('response error code ', xhr.status);
+                        xhr.responseText;
+                        console.log('response error', xhr.responseText);
+                    }
+                });
+            }
+        });
+    });
+    hideMsg = function(){
+        setTimeout(function(){
+            $('#successMsg,#failMsg').fadeOut();
+        },10000)
+        
+    };
+</script>
+
+</html>

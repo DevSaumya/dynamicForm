@@ -1,0 +1,41 @@
+{
+   "EN":{
+      "cus_0":"<strong>Find your agent.</strong>",
+      "cus_1":"One of a kind in Switzerland, identify the best real estate agents yourself for a successful sale. On top of this, get free advice to save time and money with the Bestag formula.",
+      "cus_2":"ZIP CODE",
+      "cus_3":"PRICE",
+      "address":"ADDRESS",
+      "tag2":"CONTACT DETAILS",
+      "name":"NAME",
+      "email":"EMAIL",
+      "phone_no":"PHONE NUMBER",
+      "powred": "powered by",
+      "top": "Get Top 10"
+   },
+   "FR":{
+      "cus_0":"Trouver votre courtier.",
+      "cus_1":"Unique en Suisse, trouvez vous-même les meilleurs courtiers pour réussir votre vente. La formule Bestag complète gratuitement ce choix avec nos conseils sur mesure pour gagner du temps et de l'argent.",
+      "cus_2":"DÉTAILS DU CONTACT",
+      "cus_3":"NPA",
+      "price":"PRIX",
+      "address":"ADRESSE",
+      "name":"PRÉNOM",
+      "email":"EMAIL",
+      "phone_no":"NUMÉRO DE TÉLÉPHONE",
+      "powred": "Alimenté par",
+      "top": "Obtenez le top 10"
+   },
+   "DE":{
+      "cus_0":"<strong>Ihren Makler finden.</strong>",
+      "cus_1":"DETAILS DER IMMOBILIE",
+      "tag2":"KONTAKT DETAILS",
+      "zipcode":"PLZ",
+      "price":"PREIS",
+      "address":"ADRESSE",
+      "name":"NAME",
+      "email":"EMAIL",
+      "phone_no":"TELEFONNUMMER",
+      "powred": "unterstützt von",
+      "top": "Holen Sie sich Top 10"
+   }
+}
